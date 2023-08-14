@@ -1,7 +1,7 @@
-
 """Test cases for the __main__ module."""
 
 import pytest
+
 from cookie_test.math import SimpleMath
 
 
