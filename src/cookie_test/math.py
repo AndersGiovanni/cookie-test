@@ -1,3 +1,9 @@
+"""Module for basic mathematical operations.
+
+This module contains a class for performing basic arithmetic
+operations such as addition, subtraction, multiplication, and division.
+"""
+
 from typing import Union
 
 
@@ -10,12 +16,12 @@ class SimpleMath:
     ) -> Union[float, int]:
         """Return the sum of two numbers.
 
-        Parameters:
-        number_1 (float or int): First number.
-        number_2 (float or int): Second number.
+        Args:
+            number_1 (Union[float, int]): The first number.
+            number_2 (Union[float, int]): The second number.
 
         Returns:
-        float or int: Sum of a and b.
+            Union[float, int]: Sum of number_1 and number_2.
         """
         return number_1 + number_2
 
@@ -25,12 +31,12 @@ class SimpleMath:
     ) -> Union[float, int]:
         """Return the difference between two numbers.
 
-        Parameters:
-        number_1 (float or int): First number.
-        number_2 (float or int): Second number.
+        Args:
+            number_1 (Union[float, int]): The first number.
+            number_2 (Union[float, int]): The second number.
 
         Returns:
-        float or int: Difference between a and b.
+            Union[float, int]: Difference between number_1 and number_2.
         """
         return number_1 - number_2
 
@@ -40,12 +46,12 @@ class SimpleMath:
     ) -> Union[float, int]:
         """Return the product of two numbers.
 
-        Parameters:
-        number_1 (float or int): First number.
-        number_2 (float or int): Second number.
+        Args:
+            number_1 (Union[float, int]): The first number.
+            number_2 (Union[float, int]): The second number.
 
         Returns:
-        float or int: Product of a and b.
+            Union[float, int]: Product of number_1 and number_2.
         """
         return number_1 * number_2
 
@@ -53,15 +59,15 @@ class SimpleMath:
     def divide(number_1: Union[float, int], number_2: Union[float, int]) -> float:
         """Return the division of two numbers.
 
-        Parameters:
-        a (float or int): Numerator.
-        b (float or int): Denominator.
+        Args:
+            number_1 (Union[float, int]): Numerator.
+            number_2 (Union[float, int]): Denominator.
 
         Returns:
-        float: Result of division a by b.
+            float: Result of division of number_1 by number_2.
 
         Raises:
-        ValueError: If b is 0 (to avoid division by zero).
+            ValueError: If number_2 is 0 (to avoid division by zero).
         """
         if number_2 == 0:
             raise ValueError("Division by zero is not allowed.")
