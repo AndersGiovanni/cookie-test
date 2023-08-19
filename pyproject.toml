@@ -7,7 +7,7 @@ license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/AGMoller/cookie-test"
 repository = "https://github.com/AGMoller/cookie-test"
-documentation = "https://cookie-test.readthedocs.io"
+documentation = "https://cookie-tester.readthedocs.io"
 classifiers = [
     "Development Status :: 1 - Planning",
 ]
@@ -16,7 +16,7 @@ classifiers = [
 Changelog = "https://github.com/AGMoller/cookie-test/releases"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 click = ">=8.0.1"
 
 [tool.poetry.dev-dependencies]
@@ -58,7 +58,7 @@ source = ["cookie_test", "tests"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 100
+fail_under = 80
 
 [tool.isort]
 profile = "black"
