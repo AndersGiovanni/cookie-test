@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cookie-test"
-version = "0.0.0"
+version = "0.0.1"
 description = "Cookie Test"
 authors = ["Anders Giovanni Møller <andersgiovanni@gmail.com>"]
 license = "MIT"
